@@ -1,0 +1,846 @@
+/* Stylesheet for Hart to Hart */
+
+/* General CSS */
+html {
+    font-family: "Fredoka";
+    scroll-behavior: smooth;
+}
+
+.container {
+    box-sizing: border-box;
+    border: solid;
+    position: relative;
+    display: flex;
+}
+
+#page {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+#pageNav {
+    flex-direction: column;
+    align-items: center;
+    height: max-content;
+    width: 100vw;
+    padding-top: 10vh;
+}
+
+body {
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+    font-family: "Fredoka";
+}
+
+#popUpContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+    border: solid black;
+    border-radius: 15%;
+    width: 40vw;
+    height: min-content;
+    text-align: center;
+    background-image: url(loginbackground.png);
+    background-size: 100%;
+    box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.5);
+    padding: 5vh 0.5vw 1vh 0.5vw;
+}
+
+#headerContainer {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    border: solid yellow;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+#logoClose {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+    box-sizing: border-box;
+    border: solid green;
+}
+
+#submitButton {
+    background-color: black;
+    width: 30vw;
+    color: white;
+    height: 8vh;
+    border: solid;
+    border-radius: 15px;
+    font-size: 20px;
+    border-color: black;
+}
+
+#closeButton {
+    width: 20%;
+    margin-bottom: 5%;
+    margin-right: 0;
+    padding-right: 0;
+    margin-top: 5%;
+}
+
+.button-wrapper {
+    position: relative;
+    width: 25%;
+}
+
+#closeButton:hover img {
+    filter:brightness(70%);
+}
+
+#closeButton:active {
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+input {
+    position: relative;
+    width: 100%;
+    padding: 1vw;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+    font-family: "Fredoka";
+    border-color: red;
+}
+
+input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+}
+
+#container-form {
+    justify-content: center;
+    align-items: center;
+    border: solid orange;
+    position: relative;
+    width: 100%;
+    margin-bottom: 2vh;
+}
+
+#hartLogo {
+    width: 12%;
+    position: fixed;
+}
+
+#heartLogo {
+    width: 15%;
+    margin-top: 0vh;
+    margin-bottom: 0vh;
+    margin-right: 20%;
+}
+
+/* Navbar CSS */
+ul {
+    position: fixed;
+    top: 0;
+    z-index: 500;
+    list-style-type: none;
+    margin-top: 0;
+    overflow: hidden;
+    background-color: #ffd965;
+    padding-left: 0;
+    padding-bottom: 0;
+}
+
+li {
+    float: right;
+    border-left: solid;
+}
+
+li a {
+    display: block;
+    background-color: #ffd965;
+    text-decoration: none;
+    color: black;
+    font-family: "Fredoka";
+    padding: 2vw;
+    font-size: 1vw;
+    text-align: center;
+}
+
+#Logo {
+    width: 9%;
+}
+
+.active {
+    background-color: #a8d08d;
+}
+
+li a:hover:not(.active) {
+    background-color: #ffc004;
+}
+
+
+/* Page Specific CSS */
+
+/* Intro CSS */
+#introContainer {
+    height: 100vh;
+    background-image: url('Hart to Hart Intro Logo.png');
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: 50px;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-bottom: 10%;
+    align-items: center;
+}
+
+#button-wrapper {
+    width: 300px;
+}
+
+#enterButton {
+    display: inline-block;
+    color: #fff;
+    background-color: #fff;
+    box-shadow: 0 5px #999;
+    border: solid;
+    border-color: black;
+    border-radius: 10%;
+}
+
+#enterButton img {
+    border-color: black;
+    border-radius: 10%;
+    width: 100%;
+    display: block;
+    transition-duration: 1s;
+}
+
+#enterButton:hover img {
+    filter:brightness(70%);
+}
+
+#enterButton:active {
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+/* About CSS */
+#audiovisual {
+    box-sizing: border-box;
+    width: 30%;
+    height: auto;
+    max-width: 60vh;
+    margin-left: 5%;
+    position: relative;
+    display: block;
+}
+
+#aboutcontent {
+    height: 100vh;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 5%;
+    border-color: purple;
+    margin-bottom: 0;
+    align-items: center;
+}
+
+#abouttext {
+    box-sizing: border-box;
+    border-left: solid;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-left: 15%;
+    height: 70vh;
+    margin-bottom: 2.5%;
+}
+
+body.about h1 {
+    box-sizing: border-box;
+    font-size: 3vw;
+}
+
+body.about p {
+    box-sizing: border-box;
+    font-size: 2vw;
+}
+
+#audioButton {
+    position: absolute;
+    top: 60%;
+    left: 12%;
+    width: 2%;
+    height: 4%;
+    max-width: 2vw;
+    max-height: 5vh;
+    background: yellow;
+    border: none;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 10;
+}
+
+
+/* Dashboard CSS */
+body.dashboard h1 {
+    box-sizing: border-box;
+    font-size: 3vw;
+    margin-top: 0;
+}
+
+body.dashboard p {
+    box-sizing: border-box;
+    font-size: 2vw;
+}
+
+#HartHubLogo {
+    width: 30%;
+}
+
+#dashboardContainer {
+    border-color: black;
+    height: 150vh;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 5%;
+    align-items: center;
+}
+
+#dashboardContent {
+    border-color: blue;
+    height: 100vh;
+    width: 95vw;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 3%;
+    align-items: center;
+}
+
+#currentEvents {
+    border-color: red;
+    height: 80vh;
+    max-height: 700px;
+    flex-direction: row;
+    justify-content: center;
+    padding: 2%;
+    width: 40vw;
+    align-items: top;
+}
+
+#restOfThePageType {
+    border-color: green;
+    height: 100vh;
+    max-height: 1000px;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2%;
+    width: 50vw;
+    align-items: center;
+}
+
+#skib {
+    border-color: yellow;
+    height: 30vh;
+    max-height: 300px;
+    flex-direction: row;
+    justify-content: center;
+    padding: 5%;
+    padding-left: 0%;
+    padding-right: 0%;
+    align-items: center;
+}
+
+body.dashboard button {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 2%;
+    font-family: "Fredoka";
+    font-size: 200%;
+    padding: 5%;
+    border-radius: 2vh;
+    color: #9cc3e5;
+    background-color: white;
+    font-weight: bold;
+}
+
+/* Login CSS */
+#hartLogo {
+    width: 12%;
+}
+
+body.login h1 {
+    font-size: 25px;
+}
+
+body.login p {
+    font-size: 15px;
+}
+
+#loginButton {
+    background-color: black;
+    width: 380px;
+    color: white;
+    height: 50px;
+    border: solid;
+    border-radius: 15px;
+    font-size: 20px;
+    border-color: black;
+}
+
+#forgotPassword {
+    font-size: 15px;
+    color: black;
+    text-decoration: none;
+    margin-right: 5px;
+    font-family: "Fredoka";
+}
+
+body.login , body.contactSupport , body.signUp {
+    background-image: url('music notes.png');
+    background-repeat: no-repeat;
+    background-position-y: 0vh;
+    background-size: 100%;
+}
+
+
+/* Contact Support CSS */
+body.contactSupport h1 {
+    font-size: 25px;
+    font-family: "Fredoka";
+}
+
+body.contactSupport p {
+    font-size: 15px;
+    font-family: "Fredoka";
+    border-top: solid black;
+    padding-top: 1vh;
+}
+
+.dropdown {
+    position: relative;
+    border: solid black;
+    padding: 1vh 1vw 1vh 1vw;
+    border-radius: 15px;
+    margin: 2vh auto 2vh auto;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #9cc3e5;
+    min-width: 150px;
+    z-index: 1;
+    padding: 2vh 2vw;
+    margin: 0 35% 0 20%;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+#message {
+    width: 95%;
+    margin-bottom: 2vh;
+}
+
+/* Sign Up CSS */
+
+body.signUp h1 {
+    font-size: 25px;
+    margin-top: 0px;
+    font-family: "Fredoka";
+    margin-bottom: 5px;
+}
+
+body.signUp p {
+    margin-top: 0px;
+    font-size: 15px;
+    font-family: "Fredoka";
+}
+
+body.signUp .flex-container {
+    display: flex;
+    flex-direction: row;
+}
+
+
+/* Create Event CSS */
+body.createEvent h1 {
+    box-sizing: border-box;
+    font-size: 3vw;
+    margin-top: 0;
+}
+
+body.createEvent p {
+    box-sizing: border-box;
+    font-size: 2vw;
+}
+
+#CreateEventLogo {
+    width: 25%;
+    margin-bottom: 0%;
+    border: solid yellow;
+}
+
+#createEventContainer {
+    border-color: hotpink;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0%;
+}
+
+#createEventForm {
+    border-color: red;
+    height: fit-content;
+    max-height: 700px;
+    flex-direction: row;
+    justify-content: center;
+    padding: 2vh;
+    margin: 2vh;
+    width: 45vw;
+    align-items: center;
+}
+
+body.createEvent button {
+    position: relative;
+    margin: 5% 25% 5% 25%;
+    font-size: 150%;
+    padding: 5%;
+    border-radius: 2vh;
+    color: #9cc3e5;
+    background-color: white;
+    font-weight: bold;
+    width: max-content;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 4vw;
+    max-width: 40px;
+    height: 3vh;
+    max-height: 25px;
+    margin-left: 1vh;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 2vh;
+    max-height: 20px;
+    min-height: 13px;
+    width: 1vw;
+    max-width: 20px;
+    min-width: 13px;
+    left: 0.3vw;
+    bottom: 0.4vh;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(1.5vw);
+    -ms-transform: translateX(1.5vw);
+    transform: translateX(1.5vw);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+body.createEvent input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    font-family: "Fredoka";
+}
+
+body.createEvent input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+}
+
+#dateExplicit {
+    border-color: orange;
+    height: 10vh;
+    max-height: 50px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0%;
+    margin: 0%;
+    width: 40vw;
+}
+
+#explicit {
+    margin-left: 1vw;
+    margin-right: 0.5vw;
+    font-size: 80%;
+}
+
+#search {
+    width: 15vw;
+    margin-right: 18vw;
+}
+
+#songSearch {
+    border-color: purple;
+    height: 100vh;
+    max-height: 800px;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+    padding-top: 10%;
+    width: 80vw;  
+}
+
+#searchResults {
+    border-color: red;
+    height: 10vh;
+    max-height: 50px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    width: 70vw;
+}
+
+#searchrow {
+    border-color: red;
+    height: 20vh;
+    max-height: 100px;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    width: 70vw;
+    margin-bottom: 2vw;
+}
+
+#submitEventDetails {
+    margin: 5% 2% 5% 0%;
+    font-size: 100%;
+    padding: 1%;
+    border-radius: 2vh;
+    color: #9cc3e5;
+    background-color: white;
+    font-weight: bold;
+}
+
+
+/* Event Details CSS */
+
+body.eventDetails h1 {
+    box-sizing: border-box;
+    font-size: 3vw;
+    margin-top: 0;
+}
+
+body.eventDetails p {
+    box-sizing: border-box;
+    font-size: 2vw;
+}
+
+#EventDetailsContainer {
+    border-color: black;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 0%;
+    padding-top: 10%;
+    align-items: center;
+}
+
+body.eventDetails button {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    font-family: "Fredoka";
+    font-size: 1.5vw;
+    border-radius: 2vh;
+    color: white;
+    background-color: #9cc3e5;
+    width: 12vw;
+    height: 5vh;
+}
+
+#selectedSongs {
+    border-color: purple;
+    height: 100vh;
+    max-height: 800px;
+    flex-direction: column;
+    justify-content: top;
+    padding-top: 5%;
+    width: 80vw;  
+    margin-bottom: 5%;
+    align-items: center;
+}
+
+#selectedSongsContent {
+    border: solid black;
+    height: 10vh;
+    max-height: 50px;
+    flex-direction: row;
+    justify-content: center;
+    padding: 2%;
+    width: 70vw;
+}
+
+#eventDetails {
+    border: solid pink;
+    height: 10vh;
+    max-height: 50px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    width: 50vw;
+    margin-bottom: 2vw;
+}
+
+#eventDetails p {
+    margin: 1vh 2vw 1vh 2vw;
+    font-size: 1.5vw;
+}
+
+#detailsButtons {
+    border-color: purple;
+    height: 10vh;
+    max-height: 50px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    width: 50vw;
+    margin-bottom: 2vw;
+}
+
+
+/* Account CSS */
+
+#accountContainer {
+    border-color: blue;
+    height: auto;
+    flex-direction: column;
+    justify-content: start;
+    align-content: center;
+    padding-top: 5vh;
+}
+
+#accountLogo {
+    width: 35%;
+    margin: auto;
+}
+
+#accountContent {
+    border-color: yellow;
+    flex-direction: row;
+    justify-content:space-evenly;
+    align-items: start;
+    height: auto;
+    padding-top: 5vh;
+    font-size: xx-large;
+}
+
+#column1 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    border-color: green;
+    padding: 2% 2% 2% 0%;
+    width: 25vw;
+}
+
+#column2 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    border-color: red;
+    padding: 2% 2% 2% 0%;
+    width: 25vw;
+
+}
+
+#column3 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    border-color: orange;
+    padding: 2% 2% 2% 0%;
+    width: 25vw;
+}
+
+#columnOptions {
+    position: relative;
+    border: solid #f1937a;
+    padding: 1% 50% 1% 1%;
+    width: max-content;
+    margin: 0% 5% 5% 5%;
+    box-sizing: border-box;
+    border-radius: 15px;
+}
+
+body.account span {
+    padding: 1%;
+    margin: 1% 1% 0% 5%;
+    width: max-content;
+    font-weight: bold;
+}
+
+body.account .button {
+    background-color: #b2a1c7;
+    font-size: xx-large;
+    color: white;
+    padding: 5%;
+    border-radius: 15px;
+    margin: 1% 1% 1% 5%;
+}
+
+
