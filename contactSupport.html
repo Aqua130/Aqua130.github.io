@@ -1,0 +1,67 @@
+<!DOCTYPE HTML>
+<html>
+    <head>  
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="stylesheet2.css">
+
+        <style>
+
+        /* General CSS */
+        
+        /* Form Styling */
+
+        </style>
+    
+    </head>
+    <body class="contactSupport">
+        <div class="navbar">
+            <ul>
+                <a href="dashboard.html"><img src="Hart to Hart Intro Logo.png" alt="Hart to Hart Logo" id="Logo"></a>
+                <li><a href="logout.html">Log Out</a></li>
+                <li><a href="contactSupport.html">Contact Us</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="account.html">Account</a></li>
+                <li><a href="dashboard.html">Dashboard</a></li>
+            </ul>
+        </div>
+
+        <div class="container" id="page">
+            <!-- Container for Contact Support -->
+            <div class="container" id="popUpContainer">
+                <!-- Container for heading and subheading -->
+                <div class="container" id="headerContainer">
+                    <div class="container" id="logoClose">
+                        <img id="heartLogo" src="heartlogo.png" alt="Heart logo">
+                        <a href="dashboard.html" id="closeButton">
+                            <img id="closeButton" src="CloseButton.png" alt="Close Menu Button">
+                        </a>
+                    </div>
+                    <h1 class="text-center" style="padding: 0; margin: 0;">Contact Support</h1>
+                </div>
+                
+                <!-- Form for Contacting Support -->
+                <div class="formskib" id="container-form">
+                    <form action="login.php" method="POST">
+                            <div class="dropdown">
+                                <span>Type of Support</span>
+                                <div class="dropdown-content">
+                                    <p>Report a Bug</p>
+                                    <p>Payment Issues</p>
+                                    <p>Account Issues</p>
+                                    <p>General Enquiries</p>
+                                    <p>Other</p>
+                                </div>
+                            </div>
+                            <textarea id="message" name="message" rows="7" columns="5" required placeholder="Message"></textarea>
+                            <button type="submit" id="submitButton">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>
+    
+</html>
